@@ -1,4 +1,12 @@
 import type { Config } from "tailwindcss";
+interface FontSizeConfig {
+	lineHeight: string;
+	fontWeight: string;
+}
+interface FontSize {
+	[key: string]: [string, FontSizeConfig];
+}
+
 const colors = {
 	primary: {
 		Default: "var(--primary-40)",
@@ -34,6 +42,71 @@ const colors = {
 		100: "var(--neutral-100)",
 	},
 };
+const fontSize: FontSize = {
+	display: [
+		"3.75rem",
+		{
+			lineHeight: "1.2",
+			fontWeight: "700",
+		},
+	],
+	h1: [
+		"3rem",
+		{
+			lineHeight: "1.2",
+			fontWeight: "700",
+		},
+	],
+	h2: [
+		"2.25rem",
+		{
+			lineHeight: "1.2",
+			fontWeight: "700",
+		},
+	],
+	h3: [
+		"1.5rem",
+		{
+			lineHeight: "1.5",
+			fontWeight: "700",
+		},
+	],
+	h4: [
+		"1.3125rem",
+		{
+			lineHeight: "1.5",
+			fontWeight: "700",
+		},
+	],
+	body: [
+		"1rem",
+		{
+			lineHeight: "1.75",
+			fontWeight: "400",
+		},
+	],
+	bodyBold: [
+		"1rem",
+		{
+			lineHeight: "1.75",
+			fontWeight: "700",
+		},
+	],
+	label: [
+		"0.875rem",
+		{
+			lineHeight: "1.5",
+			fontWeight: "400",
+		},
+	],
+	labelBold: [
+		"0.875rem",
+		{
+			lineHeight: "1.5",
+			fontWeight: "700",
+		},
+	],
+};
 
 const config: Config = {
 	content: [
@@ -44,6 +117,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors,
+			fontSize,
 		},
 	},
 	plugins: [],
