@@ -107,6 +107,16 @@ const fontSize: FontSize = {
 		},
 	],
 };
+const boxShadow = {
+	elevation01:
+		"0px 1px 1px 0px rgba(0,0,0,0.03), 0px 2px 2px 0px rgba(0,0,0,0.05), 0px 4px 4px 0px rgba(0,0,0,0.07), 0px 8px 8px 0px rgba(0,0,0,0.08)",
+	elevation02:
+		"0px 2px 2px 0px rgba(0,0,0,0.03), 0px 4px 4px 0px rgba(0,0,0,0.05), 0px 8px 8px 0px rgba(0,0,0,0.07), 0px 16px 16px 0px rgba(0,0,0,0.08)",
+	elevation03:
+		"0px 4px 4px 0px rgba(0,0,0,0.03), 0px 8px 8px 0px rgba(0,0,0,0.05), 0px 12px 12px 0px rgba(0,0,0,0.07), 0px 24px 24px 0px rgba(0,0,0,0.08)",
+	elevation04:
+		"0px 8px 8px 0px rgba(0,0,0,0.03), 0px 16px 16px 0px rgba(0,0,0,0.05), 0px 32px 32px 0px rgba(0,0,0,0.07), 0px 64px 64px 0px rgba(0,0,0,0.08)",
+};
 
 const config: Config = {
 	content: [
@@ -118,6 +128,7 @@ const config: Config = {
 		extend: {
 			colors,
 			fontSize,
+			boxShadow,
 		},
 	},
 	plugins: [],
