@@ -117,6 +117,12 @@ const boxShadow = {
 	elevation04:
 		"0px 8px 8px 0px rgba(0,0,0,0.03), 0px 16px 16px 0px rgba(0,0,0,0.05), 0px 32px 32px 0px rgba(0,0,0,0.07), 0px 64px 64px 0px rgba(0,0,0,0.08)",
 };
+const borderRadius = {
+	rounded1: "8px",
+	rounded2: "16px",
+	rounded3: "24px",
+	rounded4: "32px",
+};
 
 const config: Config = {
 	content: [
@@ -129,6 +135,7 @@ const config: Config = {
 			colors,
 			fontSize,
 			boxShadow,
+			borderRadius,
 		},
 	},
 	plugins: [],
